@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #EBF3F3;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.PUBLICACOES{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+/* Seção do botão de Voltar */
+
+.section-button-voltar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.a-button-voltar{
+    margin-left: 3%;
+    text-decoration: none;
+}
+
+.button-voltar{
+    height: 30px;
+    width: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.img-seta{
+    height: 25px;
+    width: 25px;
+}
+
+/*Fim*/
+
+/*Seção do titulo de publicações*/
+
+.section-text-publicacao{
+    height: 90px;
+    width: 80%;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.text-publicacoes{
+    font-size: 70px;
+    margin: 0;
+    margin-left: 6%;
+}
+
+/*Fim*/
+
+/*Seção dos botões de tipo de publicação*/
+
+.section-tipo-publicacao{
+    height: 90px;
+    width: 80%;
+    display: flex;
+    align-items: end;
+}
+
+.div-tipo-publicacao{
+    height: 60px;
+    width: 88%;
+    margin: 0;
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    border-bottom:1px solid black;
+}
+
+.option-button{
+    height: 10px;
+}
+
+.button-type-publication{
+    height: 30px;
+    font-size:18px;
+    background: 0;
+    border: transparent;
+    transition: 0.2s all ease-in-out;
+}
+
+.button-type-publication-active{
+    height: 30px;
+    font-size:18px;
+    background:0;
+    border:transparent;
+    border-bottom: 2px solid #BC6D0A;
+    transition:0.2s all ease-in-out;
+}
+
+.button-type-publication:hover{
+    border-bottom: 2px solid #BC6D0A;
+    transition: 0.2s all ease-in-out;
+}
+
+/*Fim*/
+
+/*Seção da publicações*/
+
+.list-publications{
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    align-items: start;
+    justify-content: center;
+    gap: 3%;
+
+}
+
+/*Texto de nenhuma publicação*/
+
+.text-null-publications{
+    margin: 0;
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+}
+
+/*fim*/
+
+.div-publicacao{
+    margin: 0;
+    height: 400px;
+    width: 310px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-publi{
+    height: 400px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publicacao{
+    height: 390px;
+    width: 300px;
+    background-color: #BAB7AF;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+}
+
+.publicacao:hover{
+    height: 392px;
+    width: 302px;
+    box-shadow:0px 0px 5px black;
+    transition:all 0.2s ease-in-out;
+}
+
+.tipo-publi{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px ;
+}
+
+.text-tipo{
+    height: 30px;
+    width: 20%;
+    margin: 0;
+    background-color: #14213D;   
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 20px;
+    
+}
+
+.titulo-publi{
+    width: 100%;
+    height: 80px;
+    margin-top:10px ;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    
+}
+
+.localizacao-publi{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.lugar-publi{
+    height: 20px;
+    width: 50%;
+    background-color: #14213D;
+    border-radius: 5px;
+    margin: 0;
+    margin-left: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ano-publi{
+    height: 20px;
+    width: 20%;
+    background-color: #14213D;
+    border-radius: 5px;
+    margin: 0;
+    margin-right: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-publi{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top:10px ;
+    font-size: 16px;
+}
+
+/*Card de publicação*/
+
+.div-publication{
+    height: 400px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.publication{
+    height: 390px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out
+}
+
+.publication:hover{
+    height: 392px;
+    width: 301px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.type-publication{
+    width: 90%;
+    height: 30px;
+    margin-top: 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.type-text{
+    margin: 0;
+    padding: 1px 9px;
+    height: 30px;
+    background-color: #14213D;   
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.title-publication{
+    margin-top: 12px;
+    width: 85%;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.localization-publication{
+    margin-top: 10px;
+    height: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+}
+
+.local-publication{
+    margin: 0;
+    padding: 1px 8px;
+    height: 20px;
+    background-color: #14213D;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.year-publication{
+    margin: 0;
+    padding: 1px;
+    height: 20px;
+    width: 20%;
+    background-color: #14213D;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-publication{
+    margin:0;
+    margin-top: 10px;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 16px;
+}
+
+/*Fim*/
+
+/*Seção do texto de mais publicações em andamento*/
+
+.section-mais-publicacoes{
+    height: 250px;
+    width: 80%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    
+}
+
+.text-mais-publicacoes{
+    height: 80px;
+    width: 88%;
+    margin-top: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+
+}
+
+/*Fim*/

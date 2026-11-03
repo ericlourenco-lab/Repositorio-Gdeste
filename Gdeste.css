@@ -1,0 +1,829 @@
+/*IBM PLEX SANS e JETBRAINS MONO*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #EBF3F3;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Cabeçalho*/
+
+.header{
+    height:80px;
+    width:100%;
+    background-color:rgb(255, 255, 255);
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.conteudo{
+    margin-top: 80px;
+}
+
+.img-logo-cabecalho{
+    height:35px;
+    width:110px;
+    margin-left: -30px;
+}
+
+.options{
+    display:flex;
+    flex-direction: row;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    gap: 30px;
+}
+
+.option-text{
+    padding:10px;
+}
+
+.option-button{
+    background: none;
+    border:transparent;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+.option-button:hover{
+    border-bottom:2px solid #BC6D0A;
+    
+}
+
+.img-user{
+    height: 30px;
+    width: 50px;
+}
+
+/*Fim Do Cabeçalho*/
+
+
+
+/*Pagina O que Fazemos*/
+
+.NOS{
+    margin:0;
+    padding:0;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    scroll-margin-top:80px;
+
+}
+.div-text-nos{
+    width: 80%;
+    height: 90px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.text-nos{
+    margin:0;
+    padding:0;
+    font-size: 70px;
+    margin-left: 6%;
+    font-weight: 400;
+}
+
+.info{
+    width: 80%;
+    height: 50px;
+    margin: 20px;
+}
+
+.text-info{
+    height: 40px;
+    width: 80%;
+    margin-left: 6%;
+
+}
+.cards-info{
+    height: 320px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.div-cards{
+    height: 320px;
+    width: 310px;
+    border:transparent;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px rgb(0, 0, 0);
+}
+
+.text-card{
+    width: 100%;
+    height:240px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    margin-top: 50px;
+    height:200px;
+    width: 75%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.desc-card{
+    height: 80px;
+    width: 100%;
+    background-color: #14213D;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.desc{
+    width: 50%;
+    text-align: center;
+    font-family: "JetBrains Mono", monospace;
+}
+
+/*Fim da pagina O que fazemos*/
+
+/*Pagina Equipes*/
+
+.EQUIPES{
+    height: 600px;
+    width: 100%;
+    background-color: #BAB7AF;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    transition: 0.2s all ease-in-out;
+    scroll-margin-top:80px;
+}
+
+.EQUIPES-ACTIVE{
+    height: 900px;
+    width: 100%;
+    background-color: #BAB7AF;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    transition: 0.2s all ease-in-out;
+}
+
+
+.div-text-equipes{
+    height: 90px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.text-equipes{
+    font-size:70px ;
+    font-weight: 400;
+    margin-right: 6%;
+
+}
+
+.div-equipes{
+    height: 350px;
+    width: 80%;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+    transition: 0.2s all ease-in-out;
+}
+
+.div-equipes-active{
+    height: 650px;
+    width: 80%;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+    transition: 0.2s all ease-in-out;
+}
+
+
+.equipe{
+    height: 60px;
+    width: 88%;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s all ease-in-out ;
+}
+
+
+.equipe:hover{
+    background-color: rgb(29, 29, 29);
+}
+
+.equipe-active{
+    height: 350px;
+    width: 88%;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s all ease-in-out ;
+    box-shadow: 0px 0px 10px black;
+}
+
+.info-equipe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 5px;
+}
+
+.text-equipe{
+    font-size: 15px;
+    font-weight: 400;
+    color :white;
+}
+
+.seta-equipes{
+    transition: 0.2s all ease-in-out;
+}
+
+.seta-equipes-active{
+    transform: rotate(180deg);
+    transition: 0.2s all ease-in-out;
+}
+
+.list-members{
+    display: none;
+}
+
+.list-members-active{
+    height: 300px;
+    width: 90%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    animation: activeList 0.3s ease-out forwards;
+}
+
+@keyframes activeList{
+    from {
+        opacity: 0;
+        transform: translateY(-8px); /* Começa um pouco deslocado para cima */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);    /* Termina na posição original */
+    }
+}
+
+.null-member{
+    color: white;
+}
+
+.member{
+    margin-top: 15px;
+    height: 60px;
+    width: 95%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    font-size: 19px;
+    transition: 0.2s all ease-in-out;
+    
+}
+
+/*Fim da pagina Equipes*/
+
+/*Pagina Publicações*/
+
+.PUBLICACOES{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    scroll-margin-top: 80px;
+}
+
+.div-text-publicacoes{
+    height: 90px;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.text-publicacoes{
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 6%;
+}
+
+.div-publicacoes{
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 410px;
+    width: 70%;
+    display: flex;
+    align-items: star;
+    justify-content: center;
+    border-top: 1px solid black;
+    gap: 3%;
+}
+
+/*Card da publicação*/
+
+.div-publication{
+    height: 400px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.publication{
+    height: 390px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out
+}
+
+.publication:hover{
+    height: 392px;
+    width: 301px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.type-publication{
+    width: 90%;
+    height: 30px;
+    margin-top: 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.type-text{
+    margin: 0;
+    padding: 1px 9px;
+    height: 30px;
+    background-color: #14213D;   
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.title-publication{
+    margin-top: 12px;
+    width: 85%;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.localization-publication{
+    margin-top: 10px;
+    height: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+}
+
+.local-publication{
+    margin: 0;
+    padding: 1px 8px;
+    height: 20px;
+    background-color: #14213D;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.year-publication{
+    margin: 0;
+    padding: 1px;
+    height: 20px;
+    width: 20%;
+    background-color: #14213D;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-publication{
+    margin:0;
+    margin-top: 10px;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 16px;
+}
+
+/*Área do botão de direcionamento de mais publicações*/
+
+.div-button-more-publication{
+    display: none;
+}
+
+.div-button-more-publication-active{
+    text-decoration: none;
+    display: flex;
+}
+
+/*Fim da pagina Publicações*/
+
+/*Pagina Instalação*/
+
+.INSTALACAO{
+    height: 600px;
+    width: 100%;
+    background-color: #BAB7AF;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    scroll-margin-top: 80px;
+}
+
+.div-text-instalacao{
+    height: 90px;
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.text-instalacao{
+    font-size:70px;
+    font-weight: 400;
+    margin: 0;
+    margin-right: 6%;
+}
+
+.div-imagens-lab{
+    height: 410px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.div-imagens-lab::-webkit-scrollbar{
+    display:none;
+}
+
+.imagens-lab{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    animation: mover 15s infinite linear;
+}
+
+@keyframes mover{
+    from{translate:0;}
+    to{translate:-100%}
+}
+
+.plate-img{
+    height: 380px;
+    width: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.img-lab{
+    height: 370px;
+    width: 620px; 
+    transition: 0.2s all ease-in-out;
+    border-radius: 5px;
+}
+
+.img-lab:hover{
+    height: 373px;
+    width: 624px;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.2s all ease-in-out;
+}
+
+/*Fim da pagina Instalação*/
+
+/*Pagina Institucional*/
+
+.INSTITUCIONAL{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position:relative;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 40px;
+    scroll-margin-top: 80px;
+}
+
+.div-text-institucional{
+    height: 100px;
+    width: 80%;
+    margin-top: 40px;
+
+}
+.text-institucional{
+    font-weight: 400;
+    font-size: 70px; 
+    margin: 0;
+    margin-left: 6%;
+}
+
+.div-institucional{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:row;
+    gap: 5%;
+}
+
+.section-institucional{
+    height: 400px;
+    width: 220px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img-institucional{
+    height: 70px;
+    width: 70px;
+}
+
+.text-titulo{
+    font-size: 18px;
+    margin-bottom: -5px;
+    font-weight: 500;
+}
+
+.text-descricao{
+    font-size: 18px;
+}
+
+.button-ver-mais{
+    font-size: 15px;
+    background: none;
+    border: transparent;
+    transition: all 0.2s ease-in-out;
+
+}
+.button-ver-mais:hover{
+    transition:all 0.2s ease-in-out;
+    border-bottom: 2px solid #BC6D0A;
+}
+
+/*Area historia laboratório*/
+
+.overlay{
+    display: none;
+    transition: all 0.2s ease-in-out
+}
+
+.overlay-active{
+    position:absolute;
+    height: 190%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+    transition: all 0.2s ease-in-out;
+}
+
+.pop-up-historia{
+    position: absolute;
+    top: 50px;
+    left: 100%;
+    transition: all 0.2s ease-in-out;
+    z-index:  10000;
+}
+
+.pop-up-historia-active{
+    height: 450px;
+    width: 50%;
+    background-color: white;
+    position: fixed;
+    display:flex;
+    top: 20%;
+    transition: all 0.2s ease-in-out;
+    z-index: 10000;
+    border-radius: 10px;
+}
+
+.div-area-fechar{
+    height: 450px;
+    width: 40%;
+    background-color: #14213D;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.div-button-fechar{
+    height: 70px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.button-fechar{
+    height: 37px;
+    width: 37px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    font-size: 25px;
+    color: #BAB7AF;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.button-fechar:hover{
+    color: white;
+
+}
+
+.text-area-fechar{
+    height: 120px;
+    width: 70%;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.5;
+}
+
+.div-text-historia{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text-historia{
+    height: 80%;
+    width: 80%;
+    font-size: 19px;
+}
+
+/*Fim da pagina Institucional*/
+
+/*Rodapé*/
+
+.footer{
+    height:180px;
+    width: 100%;
+    background-color: #BAB7AF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.logo-instituto{
+    height: 70px;
+    width: 240px;
+}
+
+.div-localizacao{
+    height: 140px;
+    width: 250px;   
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-endereco{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom:-7px;
+}
+
+.div-comunicacao{
+    height: 140px;
+    width: 200px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-contato{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: -5px;
+    margin-top: 20px;
+}
+
+.logo-redes{
+    height: 30px;
+    width: 30px;
+}
+
+.div-redes{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.div-laboratorio{
+    height: 100px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.img-logo-rodape{
+    height:35px;
+    width:110px;
+    margin-bottom: 20px;
+}
