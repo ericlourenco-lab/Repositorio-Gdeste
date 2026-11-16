@@ -9,6 +9,16 @@ body{
     font-family: "IBM Plex Sans", sans-serif;
 }
 
+footer a{
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #3455B7;
+    transition: 0.5s;
+}
+
 /*.roboto-<uniquifier> {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
