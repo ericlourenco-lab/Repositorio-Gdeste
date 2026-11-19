@@ -1,15 +1,47 @@
 /*IBM PLEX SANS e JETBRAINS MONO*/
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+
 body{
     margin: 0;
     padding: 0;
-    background-color: #EBF3F3;
+    background-color: #D4E7E7;
     font-family: "IBM Plex Sans", sans-serif;
 }
 
+footer a{
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #3455B7;
+    transition: 0.5s;
+}
+
+/*.roboto-<uniquifier> {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }*/
+
 html{
     scroll-behavior: smooth;
+}
+
+h1{
+    font-family: roboto;
+    font-size:70px ;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+p{
+    font-family: roboto;
+    font-size: medium;
 }
 
 /*Cabeçalho*/
@@ -33,7 +65,7 @@ html{
 .img-logo-cabecalho{
     height:35px;
     width:110px;
-    margin-left: -30px;
+    margin-left: 20px;
 }
 
 .options{
@@ -41,7 +73,9 @@ html{
     flex-direction: row;
     height: 70px;
     background-color: rgb(255, 255, 255);
-    gap: 30px;
+    gap: 2rem;
+    text-align:end;
+    margin-left: auto;
 }
 
 .option-text{
@@ -56,7 +90,7 @@ html{
     color: black;
 }
 .option-button:hover{
-    border-bottom:2px solid #BC6D0A;
+    border-bottom:3px solid #F2CC33;
     
 }
 
@@ -70,6 +104,18 @@ html{
 
 
 /*Pagina O que Fazemos*/
+
+
+.iconestopo{
+    align-items: center;
+    display: block;
+    width: 70px; 
+  height: auto;
+  max-width: 100%;
+  margin:auto;
+  margin-top: 20px;
+}
+
 
 .NOS{
     margin:0;
@@ -92,22 +138,23 @@ html{
 
 .text-nos{
     margin:0;
+    margin-bottom: 10px;
     padding:0;
     font-size: 70px;
-    margin-left: 6%;
-    font-weight: 400;
+    text-align: center;
+    color: #14213D;
 }
 
 .info{
     width: 80%;
     height: 50px;
     margin: 20px;
+    text-align: center;
 }
 
 .text-info{
-    height: 40px;
-    width: 80%;
-    margin-left: 6%;
+    font-size: bold;
+    text-align: center;
 
 }
 .cards-info{
@@ -121,7 +168,7 @@ html{
 }
 
 .div-cards{
-    height: 320px;
+    height: 360px;
     width: 310px;
     border:transparent;
     background-color: white;
@@ -135,12 +182,13 @@ html{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .text{
-    margin-top: 50px;
+    margin-top: 10px;
     height:200px;
     width: 75%;
     text-align: center;
@@ -151,8 +199,7 @@ html{
     height: 80px;
     width: 100%;
     background-color: #14213D;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius: 10px;
+    border-radius:10px 10px 0px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,18 +242,15 @@ html{
 
 .div-text-equipes{
     height: 90px;
-    width: 80%;
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: end;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .text-equipes{
-    font-size:70px ;
-    font-weight: 400;
-    margin-right: 6%;
-
+    margin:0;
+    color: #14213D;
 }
 
 .div-equipes{
@@ -237,7 +281,7 @@ html{
 .equipe{
     height: 60px;
     width: 88%;
-    background-color: black;
+    background-color: #14213D;
     border-radius: 10px;
     display: flex;
     justify-content: start;
@@ -248,13 +292,13 @@ html{
 
 
 .equipe:hover{
-    background-color: rgb(29, 29, 29);
+    background-color: #13203c;
 }
 
 .equipe-active{
     height: 350px;
     width: 88%;
-    background-color: black;
+    background-color: #14213D;
     border-radius: 10px;
     display: flex;
     justify-content: start;
@@ -294,7 +338,7 @@ html{
 .list-members-active{
     height: 300px;
     width: 90%;
-    background-color: black;
+    background-color: #14213D;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -352,15 +396,13 @@ html{
 
 .div-text-publicacoes{
     height: 90px;
-    width: 80%;
     margin-top: 30px;
 }
 
 .text-publicacoes{
     font-size: 70px;
-    font-weight: 400;
     margin: 0;
-    margin-left: 6%;
+    color:#14213D;
 }
 
 .div-publicacoes{
@@ -517,7 +559,6 @@ html{
 
 .div-text-instalacao{
     height: 90px;
-    width: 80%;
     margin-top: 30px;
     display: flex;
     justify-content: end;
@@ -525,9 +566,8 @@ html{
 
 .text-instalacao{
     font-size:70px;
-    font-weight: 400;
     margin: 0;
-    margin-right: 6%;
+    color: #14213D;
 }
 
 .div-imagens-lab{
@@ -594,17 +634,23 @@ html{
     scroll-margin-top: 80px;
 }
 
+.div-institucional-cards{
+    height: 360px;
+    width: 310px;
+    border:transparent;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px rgb(0, 0, 0);
+}
+
 .div-text-institucional{
     height: 100px;
-    width: 80%;
     margin-top: 40px;
-
+    text-align: center;
 }
 .text-institucional{
-    font-weight: 400;
-    font-size: 70px; 
     margin: 0;
-    margin-left: 6%;
+    color: #14213D;
 }
 
 .div-institucional{
@@ -661,6 +707,15 @@ html{
     transition: all 0.2s ease-in-out
 }
 
+.cardtitulo{
+    align-items: center;
+    color: #3455B7;
+    font: bolder;
+    font-size: x-large;
+    text-align: center;
+   margin: auto;
+}
+
 .overlay-active{
     position:absolute;
     height: 190%;
@@ -676,6 +731,7 @@ html{
     left: 100%;
     transition: all 0.2s ease-in-out;
     z-index:  10000;
+    display: none;
 }
 
 .pop-up-historia-active{
